@@ -1,0 +1,330 @@
+Microsoft Windows [Version 10.0.18363.1440]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Brina>svn --version
+svn, version 1.14.1 (r1886195)
+   compiled Feb  9 2021, 20:19:00 on x86-microsoft-windows
+
+Copyright (C) 2021 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.9 (compiled with 1.3.9)
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+The following authentication credential caches are available:
+
+* Wincrypt cache in C:\Users\Brina\AppData\Roaming\Subversion
+
+
+C:\Users\Brina>\Desktop
+'\Desktop' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Brina>cd Desktop
+
+C:\Users\Brina\Desktop>cd Lab6_SVN
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn add Repo2
+svn: E155007: 'C:\Users\Brina\Desktop\Lab6_SVN' is not a working copy
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn copy
+svn: E205001: Try 'svn help copy' for more information
+svn: E205001: Not enough arguments provided
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn help
+usage: svn <subcommand> [options] [args]
+Subversion command-line client.
+Type 'svn help <subcommand>' for help on a specific subcommand.
+Type 'svn --version' to see the program version and RA modules,
+     'svn --version --verbose' to see dependency versions as well,
+     'svn --version --quiet' to see just the version number.
+
+Most subcommands take file and/or directory arguments, recursing
+on the directories.  If no arguments are supplied to such a
+command, it recurses on the current directory (inclusive) by default.
+
+Available subcommands:
+   add
+   auth
+   blame (praise, annotate, ann)
+   cat
+   changelist (cl)
+   checkout (co)
+   cleanup
+   commit (ci)
+   copy (cp)
+   delete (del, remove, rm)
+   diff (di)
+   export
+   help (?, h)
+   import
+   info
+   list (ls)
+   lock
+   log
+   merge
+   mergeinfo
+   mkdir
+   move (mv, rename, ren)
+   patch
+   propdel (pdel, pd)
+   propedit (pedit, pe)
+   propget (pget, pg)
+   proplist (plist, pl)
+   propset (pset, ps)
+   relocate
+   resolve
+   resolved
+   revert
+   status (stat, st)
+   switch (sw)
+   unlock
+   update (up)
+   upgrade
+
+Subversion is a tool for version control.
+For additional information, see http://subversion.apache.org/
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn cp
+svn: E205001: Try 'svn help copy' for more information
+svn: E205001: Not enough arguments provided
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn cp Lab6_SVN
+svn: E205001: Try 'svn help copy' for more information
+svn: E205001: Not enough arguments provided
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn copy ~\Lab6_SVN
+svn: E205001: Try 'svn help copy' for more information
+svn: E205001: Not enough arguments provided
+
+C:\Users\Brina\Desktop\Lab6_SVN>cd https://github.com/sjackson96/Lab6Part2.git
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Brina\Desktop\Lab6_SVN>cd trunk
+The system cannot find the path specified.
+
+C:\Users\Brina\Desktop\Lab6_SVN>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 381C-A620
+
+ Directory of C:\Users\Brina\Desktop\Lab6_SVN
+
+03/22/2021  12:42 AM    <DIR>          .
+03/22/2021  12:42 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  353,002,770,432 bytes free
+
+C:\Users\Brina\Desktop\Lab6_SVN>svnadmin create /var/svn/repos
+svnadmin: E720003: Repository creation failed
+svnadmin: E720003: Could not create top-level directory
+svnadmin: E720003: Can't create directory '\var\svn\repos': The system cannot find the path specified.
+
+C:\Users\Brina\Desktop\Lab6_SVN>dir Lab6_SVN
+ Volume in drive C is Windows
+ Volume Serial Number is 381C-A620
+
+ Directory of C:\Users\Brina\Desktop\Lab6_SVN
+
+File Not Found
+
+C:\Users\Brina\Desktop\Lab6_SVN>dir Desktop
+ Volume in drive C is Windows
+ Volume Serial Number is 381C-A620
+
+ Directory of C:\Users\Brina\Desktop\Lab6_SVN
+
+File Not Found
+
+C:\Users\Brina\Desktop\Lab6_SVN>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 381C-A620
+
+ Directory of C:\Users\Brina\Desktop\Lab6_SVN
+
+03/22/2021  12:42 AM    <DIR>          .
+03/22/2021  12:42 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  353,002,057,728 bytes free
+
+C:\Users\Brina\Desktop\Lab6_SVN>svnadmin create C:\Users\Brina\Desktop\Lab6_SVN
+svnadmin: E200011: Repository creation failed
+svnadmin: E200011: Could not create top-level directory
+svnadmin: E200011: 'C:\Users\Brina\Desktop\Lab6_SVN' exists and is non-empty
+
+C:\Users\Brina\Desktop\Lab6_SVN>svnadmin create C:\Users\Brina\Desktop\Lab6_SVN\Test
+
+C:\Users\Brina\Desktop\Lab6_SVN>svnadmin create C:\Users\Brina\Desktop\Lab6_SVN\Repo2
+
+C:\Users\Brina\Desktop\Lab6_SVN>svnadmin add NewFile.java
+Unknown subcommand: 'add'
+Type 'svnadmin help' for usage.
+
+C:\Users\Brina\Desktop\Lab6_SVN>svnadmin create C:\Users\Brina\Desktop\Lab6_SVN\Repo2\Testing.java
+svnadmin: E165002: 'C:\Users\Brina\Desktop\Lab6_SVN\Repo2\Testing.java' is a subdirectory of an existing repository rooted at 'C:\Users\Brina\Desktop\Lab6_SVN\Repo2'
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn add testing.java
+svn: E155007: 'C:\Users\Brina\Desktop\Lab6_SVN' is not a working copy
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn add text.txt
+svn: E155007: 'C:\Users\Brina\Desktop\Lab6_SVN' is not a working copy
+
+C:\Users\Brina\Desktop\Lab6_SVN>svnversion
+Unversioned directory
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn checkout ~\Lab6_SVN
+svn: E205000: Try 'svn help checkout' for more information
+svn: E205000: Error parsing arguments
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn checkout C:\Users\Brina\Desktop\Lab6_SVN
+svn: E205000: Try 'svn help checkout' for more information
+svn: E205000: Error parsing arguments
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn checkout https://github.com/sjackson96/Lab6Part2.git
+A    Lab6Part2.git\branches
+A    Lab6Part2.git\trunk
+A    Lab6Part2.git\trunk\Failed_Server
+Checked out revision 1.
+
+C:\Users\Brina\Desktop\Lab6_SVN>cd trunk
+The system cannot find the path specified.
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn up trunk
+Skipped 'trunk'
+svn: E155007: None of the targets are working copies
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn add Hello.java
+svn: E155007: 'C:\Users\Brina\Desktop\Lab6_SVN' is not a working copy
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn checkout https://github.com/sjackson96/Lab6Part2.git/trunk
+A    trunk\Failed_Server
+Checked out revision 1.
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn up trunk
+Updating 'trunk':
+At revision 1.
+
+C:\Users\Brina\Desktop\Lab6_SVN>svn up --depth empty branches
+Skipped 'branches'
+svn: E155007: None of the targets are working copies
+
+C:\Users\Brina\Desktop\Lab6_SVN>cd trunk
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn add Hello.java
+svn: warning: W155010: 'C:\Users\Brina\Desktop\Lab6_SVN\trunk\Hello.java' not found
+svn: E200009: Could not add all targets because some targets don't exist
+svn: E200009: Illegal target for the requested operation
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn create Hello.java
+Unknown subcommand: 'create'
+Type 'svn help' for usage.
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn help
+usage: svn <subcommand> [options] [args]
+Subversion command-line client.
+Type 'svn help <subcommand>' for help on a specific subcommand.
+Type 'svn --version' to see the program version and RA modules,
+     'svn --version --verbose' to see dependency versions as well,
+     'svn --version --quiet' to see just the version number.
+
+Most subcommands take file and/or directory arguments, recursing
+on the directories.  If no arguments are supplied to such a
+command, it recurses on the current directory (inclusive) by default.
+
+Available subcommands:
+   add
+   auth
+   blame (praise, annotate, ann)
+   cat
+   changelist (cl)
+   checkout (co)
+   cleanup
+   commit (ci)
+   copy (cp)
+   delete (del, remove, rm)
+   diff (di)
+   export
+   help (?, h)
+   import
+   info
+   list (ls)
+   lock
+   log
+   merge
+   mergeinfo
+   mkdir
+   move (mv, rename, ren)
+   patch
+   propdel (pdel, pd)
+   propedit (pedit, pe)
+   propget (pget, pg)
+   proplist (plist, pl)
+   propset (pset, ps)
+   relocate
+   resolve
+   resolved
+   revert
+   status (stat, st)
+   switch (sw)
+   unlock
+   update (up)
+   upgrade
+
+Subversion is a tool for version control.
+For additional information, see http://subversion.apache.org/
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn add Hello.java
+svn: warning: W155010: 'C:\Users\Brina\Desktop\Lab6_SVN\trunk\Hello.java' not found
+svn: E200009: Could not add all targets because some targets don't exist
+svn: E200009: Illegal target for the requested operation
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn add Hello.java
+A         Hello.java
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn commit
+svn: E205007: Commit failed (details follow):
+svn: E205007: Could not use external editor to fetch log message; consider setting the $SVN_EDITOR environment variable or using the --message (-m) or --file (-F) options
+svn: E205007: None of the environment variables SVN_EDITOR, VISUAL or EDITOR are set, and no 'editor-cmd' run-time configuration option was found
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn commit .
+svn: E205007: Commit failed (details follow):
+svn: E205007: Could not use external editor to fetch log message; consider setting the $SVN_EDITOR environment variable or using the --message (-m) or --file (-F) options
+svn: E205007: None of the environment variables SVN_EDITOR, VISUAL or EDITOR are set, and no 'editor-cmd' run-time configuration option was found
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn commit --Hello.java
+svn: invalid option: --Hello.java
+Type 'svn help' for usage.
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svm commit -Hello.java
+'svm' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn commit -Hello.java
+svn: invalid option character: e
+Type 'svn help' for usage.
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn commit -F Hello.java
+svn: E205004: Log message file is a versioned file; use '--force-log' to override
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>svn commit --force-log -F Hello.java
+Authentication realm: <https://github.com:443> GitHub
+Password for 'Brina': ********
+Authentication realm: <https://github.com:443> GitHub
+Username: sjackson96
+Password for 'sjackson96': ********
+Adding         Hello.java
+Transmitting file data .done
+Committing transaction...
+Committed revision 2.
+
+C:\Users\Brina\Desktop\Lab6_SVN\trunk>
