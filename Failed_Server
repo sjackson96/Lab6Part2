@@ -1,0 +1,564 @@
+[sabjacks@sol25 Lab6Part2]$ sabjacks@146.245.252.25's password:
+> Last login: Mon Mar 22 00:16:48 2021 from pool-108-41-202-176.nycmny.fios.verizon.net
+> [sabjacks@sol25 ~]$ cd C:/Desktop/Lab6
+> -bash: cd: C:/Desktop/Lab6: No such file or directory
+> [sabjacks@sol25 ~]$ cd C:\Users
+
+> -bash: cd: C:Users: No such file or directory
+
+> [sabjacks@sol25 ~]$ cd C:
+
+> -bash: cd: C:: No such file or directory
+
+> [sabjacks@sol25 ~]$ cd C:\Desktop
+
+> -bash: cd: C:Desktop: No such file or directory
+
+> [sabjacks@sol25 ~]$ whois
+
+> Usage: whois [OPTION]... OBJECT...
+
+>
+
+> -h HOST, --host HOST   connect to server HOST
+
+> -p PORT, --port PORT   connect to PORT
+
+> -H                     hide legal disclaimers
+
+>       --verbose        explain what is being done
+
+>       --help           display this help and exit
+
+>       --version        output version information and exit
+
+>
+
+> These flags are supported by whois.ripe.net and some RIPE-like servers:
+
+> -l                     find the one level less specific match
+
+> -L                     find all levels less specific matches
+
+> -m                     find all one level more specific matches
+
+> -M                     find all levels of more specific matches
+
+> -c                     find the smallest match containing a mnt-irt attribute
+
+> -x                     exact match
+
+> -b                     return brief IP address ranges with abuse contact
+
+> -B                     turn off object filtering (show email addresses)
+
+> -G                     turn off grouping of associated objects
+
+> -d                     return DNS reverse delegation objects too
+
+> -i ATTR[,ATTR]...      do an inverse look-up for specified ATTRibutes
+
+> -T TYPE[,TYPE]...      only look for objects of TYPE
+
+> -K                     only primary keys are returned
+
+> -r                     turn off recursive look-ups for contact information
+
+> -R                     force to show local copy of the domain object even
+
+>                        if it contains referral
+
+> -a                     also search all the mirrored databases
+
+> -s SOURCE[,SOURCE]...  search the database mirrored from SOURCE
+
+> -g SOURCE:FIRST-LAST   find updates from SOURCE from serial FIRST to LAST
+
+> -t TYPE                request template for object of TYPE
+
+> -v TYPE                request verbose template for object of TYPE
+
+> -q [version|sources|types]  query specified server info
+
+> [sabjacks@sol25 ~]$ whoami
+
+> sabjacks
+
+> [sabjacks@sol25 ~]$ cd ~/Desktop
+
+> -bash: cd: /users1/st/sabjacks/Desktop: No such file or directory
+
+> [sabjacks@sol25 ~]$ cd/
+
+> -bash: cd/: No such file or directory
+
+> [sabjacks@sol25 ~]$ cd Desktop/
+
+> -bash: cd: Desktop/: No such file or directory
+
+> [sabjacks@sol25 ~]$ cd https://github.com/sjackson96/Lab6.git
+
+> -bash: cd: https://github.com/sjackson96/Lab6.git: No such file or directory
+
+> [sabjacks@sol25 ~]$ svn add Repo2
+
+> svn: E155007: '/users1/st/sabjacks' is not a working copy
+
+> [sabjacks@sol25 ~]$ cd trunk
+
+> -bash: cd: trunk: No such file or directory
+
+> [sabjacks@sol25 ~]$ whatis svn
+
+> svn (1)              - Subversion command line client tool
+
+> [sabjacks@sol25 ~]$ svn co --depth empty https://github.com/sjackson96/Lab6Part2
+
+> ^[[D^[[AAuthentication realm: <https://github.com:443> GitHub
+
+> Password for 'sabjacks':
+
+> Authentication realm: <https://github.com:443> GitHub
+
+> Username: sjackson96
+
+> Password for 'sjackson96':
+
+> svn: E160013: Unable to connect to a repository at URL 'https://github.com/sjackson96/Lab6Part2'
+
+> svn: E160013: 'https://github.com/sjackson96/Lab6Part2' path not found
+
+> [sabjacks@sol25 ~]$ svn co --depth https://github.com/sjackson96/Lab6
+
+> svn: E205000: 'https://github.com/sjackson96/Lab6' is not a valid depth; try 'empty', 'files', 'immediates', or 'infinity'
+
+> [sabjacks@sol25 ~]$ svn co --depth empty https://github.com/sjackson96/Lab6Part2
+
+> Authentication realm: <https://github.co
+
+> Password for 'sabjacks':
+
+> Authentication realm: <https://github.com:443> GitHub
+
+> Username: sjackson96
+
+> Password for 'sjackson96':
+
+> svn: E160013: Unable to connect to a repository at URL 'https://github.com/sjackson96/Lab6Part2
+
+-bash: sabjacks@146.245.252.25s password:
+Last login: Mon Mar 22 00:16:48 2021 from pool-108-41-202-176.nycmny.fios.verizon.net
+[sabjacks@sol25 ~]$ cd C:/Desktop/Lab6
+-bash: cd: C:/Desktop/Lab6: No such file or directory
+[sabjacks@sol25 ~]$ cd C:\Users
+-bash: cd: C:Users: No such file or directory
+[sabjacks@sol25 ~]$ cd C:
+-bash: cd: C:: No such file or directory
+[sabjacks@sol25 ~]$ cd C:\Desktop
+-bash: cd: C:Desktop: No such file or directory
+[sabjacks@sol25 ~]$ whois
+Usage: whois [OPTION]... OBJECT...
+
+-h HOST, --host HOST   connect to server HOST
+-p PORT, --port PORT   connect to PORT
+-H                     hide legal disclaimers
+      --verbose        explain what is being done
+      --help           display this help and exit
+      --version        output version information and exit
+
+These flags are supported by whois.ripe.net and some RIPE-like servers:
+-l                     find the one level less specific match
+-L                     find all levels less specific matches
+-m                     find all one level more specific matches
+-M                     find all levels of more specific matches
+-c                     find the smallest match containing a mnt-irt attribute
+-x                     exact match
+-b                     return brief IP address ranges with abuse contact
+-B                     turn off object filtering (show email addresses)
+-G                     turn off grouping of associated objects
+-d                     return DNS reverse delegation objects too
+-i ATTR[,ATTR]...      do an inverse look-up for specified ATTRibutes
+-T TYPE[,TYPE]...      only look for objects of TYPE
+-K                     only primary keys are returned
+-r                     turn off recursive look-ups for contact information
+-R                     force to show local copy of the domain object even
+                       if it contains referral
+-a                     also search all the mirrored databases
+-s SOURCE[,SOURCE]...  search the database mirrored from SOURCE
+-g SOURCE:FIRST-LAST   find updates from SOURCE from serial FIRST to LAST
+-t TYPE                request template for object of TYPE
+-v TYPE                request verbose template for object of TYPE
+-q [version|sources|types]  query specified server info
+[sabjacks@sol25 ~]$ whoami
+sabjacks
+[sabjacks@sol25 ~]$ cd ~/Desktop
+-bash: cd: /users1/st/sabjacks/Desktop: No such file or directory
+[sabjacks@sol25 ~]$ cd/
+-bash: cd/: No such file or directory
+[sabjacks@sol25 ~]$ cd Desktop/
+-bash: cd: Desktop/: No such file or directory
+[sabjacks@sol25 ~]$ cd https://github.com/sjackson96/Lab6.git
+-bash: cd: https://github.com/sjackson96/Lab6.git: No such file or directory
+[sabjacks@sol25 ~]$ svn add Repo2
+svn: E155007: /users1/st/sabjacks is not a working copy
+[sabjacks@sol25 ~]$ cd trunk
+-bash: cd: trunk: No such file or directory
+[sabjacks@sol25 ~]$ whatis svn
+svn (1)              - Subversion command line client tool
+[sabjacks@sol25 ~]$ svn co --depth empty https://github.com/sjackson96/Lab6Part2
+^[[D^[[AAuthentication realm: <https://github.com:443> GitHub
+Password for sabjacks:
+Authentication realm: <https://github.com:443> GitHub
+Username: sjackson96
+Password for sjackson96:
+svn: E160013: Unable to connect to a repository at URL https://github.com/sjackson96/Lab6Part2
+svn: E160013: https://github.com/sjackson96/Lab6Part2 path not found
+[sabjacks@sol25 ~]$ svn co --depth https://github.com/sjackson96/Lab6
+svn: E205000: https://github.com/sjackson96/Lab6 is not a valid depth; try empty, files, immediates, or infinity
+[sabjacks@sol25 ~]$ svn co --depth empty https://github.com/sjackson96/Lab6Part2
+Authentication realm: <https://github.co
+Password for sabjacks:
+Authentication realm: <https://github.com:443> GitHub
+Username: sjackson96
+Password for sjackson96:
+svn: E160013: Unable to connect to a repository at URL https://github.com/sjackson96/Lab6Part2: No such file or directory
+[sabjacks@sol25 Lab6Part2]$ svn: E160013: 'https://github.com/sjackson96/Lab6Part2' path not found
+
+bash: svn:: command not found...
+Similar command is: 'svn'
+[sabjacks@sol25 Lab6Part2]$ [sabjacks@sol25 ~]$ cd repo
+p
+bash: [sabjacks@sol25: command not found...
+[sabjacks@sol25 Lab6Part2]$ -bash: cd: repo: No such file or directory
+.
+bash: -bash:: command not found...
+[sabjacks@sol25 Lab6Part2]$ [sabjacks@sol25 ~]$ svn co --depth
+h
+bash: [sabjacks@sol25: command not found...
+[sabjacks@sol25 Lab6Part2]$ svn: missing
+v
+bash: svn:: command not found...
+Similar command is: 'svn'
+[sabjacks@sol25 Lab6Part2]$ Type 'svn help' for usage.
+e
+bash: Type: command not found...
+[sabjacks@sol25 Lab6Part2]$ [sabjacks@sol25 ~]$ svn help
+
+bash: [sabjacks@sol25: command not found...
+[sabjacks@sol25 Lab6Part2]$ usage: svn <subcommand> [options] [args]
+e
+-bash: subcommand: No such file or directory
+[sabjacks@sol25 Lab6Part2]$ Subversion command-line client, version 1.7.14.
+(
+bash: Subversion: command not found...
+[sabjacks@sol25 Lab6Part2]$ Type 'svn help <subcommand>' for help on a specific subcommand.
+)
+bash: Type: command not found...
+[sabjacks@sol25 Lab6Part2]$ Type 'svn --version' to see the progr
+t
+bash: Type: command not found...
+[sabjacks@sol25 Lab6Part2]$   or 'svn --version --quiet' to see just the
+l
+bash: or: command not found...
+[sabjacks@sol25 Lab6Part2]$
+[sabjacks@sol25 Lab6Part2]$ Most subcommands take fi
+
+bash: Most: command not found...
+[sabjacks@sol25 Lab6Part2]$ on the directories.  If no arguments are
+
+bash: on: command not found...
+[sabjacks@sol25 Lab6Part2]$ command, it recurses on the curre
+
+bash: command,: command not found...
+Similar command is: 'command'
+[sabjacks@sol25 Lab6Part2]$
+[sabjacks@sol25 Lab6Part2]$ Available subcommands:
+d
+bash: Available: command not found...
+[sabjacks@sol25 Lab6Part2]$    add
+o
+bash: add: command not found...
+[sabjacks@sol25 Lab6Part2]$    blame (praise
+t
+-bash: syntax error near unexpected token `praise'
+[sabjacks@sol25 Lab6Part2]$    cat
+o
+   propset (pset, ps)
+   relocate
+   resolve
+   resolved
+   revert
+   status (stat, st)
+   switch (sw)
+   unlock
+   update (up)
+   upgrade
+
+Subversion is a tool for version control.
+For additional information, see http://subversion.apache.org/
+[sabjacks@sol25 ~]$ svn cd
+Unknown command: 'cd'
+Type 'svn help' for usage.
+[sabjacks@sol25 ~]$ cd
+[sabjacks@sol25 ~]$ svn clone https://github.com/sjackson96/Lab6Part2.git
+Unknown command: 'clone'
+Type 'svn help' for usage.
+[sabjacks@sol25 ~]$ cd trunk
+-bash: cd: trunk: No such file or directory
+[sabjacks@sol25 ~]$ cd https://github.com/sjackson96/Lab6Part2.git
+-bash: cd: https://github.com/sjackson96/Lab6Part2.git: No such file or directory
+[sabjacks@sol25 ~]$ cd Desktop
+-bash: cd: Desktop: No such file or directory
+[sabjacks@sol25 ~]$ cd LAPTOP-52U8CSPH
+-bash: cd: LAPTOP-52U8CSPH: No such file or directory
+[sabjacks@sol25 ~]$ git clone https://github.com/sjackson96/Lab6Part2.git
+Cloning into 'Lab6Part2'...
+warning: You appear to have cloned an empty repository.
+[sabjacks@sol25 ~]$ cd Lab6Part2
+[sabjacks@sol25 Lab6Part2]$ svn add Repo2
+svn: E155007: '/users1/st/sabjacks/Lab6Part2' is not a working copy
+[sabjacks@sol25 Lab6Part2]$ svn clone https://github.com/sjackson96/Lab6Part2.git
+Unknown command: 'clone'
+Type 'svn help' for usage.
+[sabjacks@sol25 Lab6Part2]$ svn help
+usage: svn <subcommand> [options] [args]
+Subversion command-line client, version 1.7.14.
+Type 'svn help <subcommand>' for help on a specific subcommand.
+Type 'svn --version' to see the program version and RA modules
+  or 'svn --version --quiet' to see just the version number.
+
+Most subcommands take file and/or directory arguments, recursing
+on the directories.  If no arguments are supplied to such a
+command, it recurses on the current directory (inclusive) by default.
+
+Available subcommands:
+   add
+   blame (praise, annotate, ann)
+   cat
+   changelist (cl)
+   checkout (co)
+   cleanup
+   commit (ci)
+   copy (cp)
+   delete (del, remove, rm)
+   diff (di)
+   export
+   help (?, h)
+   import
+   info
+   list (ls)
+   lock
+   log
+   merge
+   mergeinfo
+   mkdir
+   move (mv, rename, ren)
+   patch
+   propdel (pdel, pd)
+   propedit (pedit, pe)
+   propget (pget, pg)
+   proplist (plist, pl)
+   propset (pset, ps)
+   relocate
+   resolve
+   resolved
+   revert
+   status (stat, st)
+   switch (sw)
+   unlock
+   update (up)
+   upgrade
+
+Subversion is a tool for version control.
+For additional information, see http://subversion.apache.org/
+[sabjacks@sol25 Lab6Part2]$ cd Lab6Part2
+-bash: cd: Lab6Part2: No such file or directory
+[sabjacks@sol25 Lab6Part2]$ svn checkout https://github.com/sjackson96/Lab6Part2.git
+Checked out revision 0.
+[sabjacks@sol25 Lab6Part2]$ pwd trunk
+/users1/st/sabjacks/Lab6Part2
+[sabjacks@sol25 Lab6Part2]$ svn info
+svn: E155007: '/users1/st/sabjacks/Lab6Part2' is not a working copy
+[sabjacks@sol25 Lab6Part2]$
+   changelist (cl)
+   comanupt (co)
+
+   eiff (di)el, remove, rm)
+   lifort?, h)
+   mkdirinfo
+   propdel (pdename, ren)
+   propget (pget, pg)e)
+   resolved(pset, ps)
+
+Subversion is a too
+For additional information, see http://subversion.apache.org/
+[sabjacks@sol25 ~]$ svn co --depth https://github.com/sjacks
+svn: E205000: 'https://github.com/sjackson96/Lab6.git' is not a
+[sabjacks@sol25 ~]$ svn co --depth empty https://github.com/sja
+Summped 'trunk' ~]$ svn up trunk
+[sabjacks@sol25: 1
+[sabjacks@sol2'/users1/st/sabjacks' is not a working copy
+svn: E155007: '/users1/st/saRepo2
+-bash: cd: trunk: No such file or
+[sabjacks@sol25 ~]$ svn add hel
+[sabjacks@s7: '/users1/st/sabjacks' is not a working copy
+svn: E155007: '/users1/st/sabjacks' is not a working
+Summped 'trunk' ~]$ svn up trunk
+bash: A: command not found.
+[sabjacks@sol25d not found...
+[sabjacks@so command not found...
+[sabjacks@sk/README.md: No such file or directory
+svn: E155007: '/users1/st/sabjacks/trunk' is not a working copy
+Subge: svn <subcommand> [options] [args]
+Type 'svn help <subcommand>' for help on a specific subcom
+  oe 'svn --version' to see the program version and RA modules
+Most subcommands take file and/or directory arguments,
+on the directories.  If no
+command,
+   addble subcommands:
+   commit ( (co)l)
+   delete p)
+   help (?, h)
+   list (ls)
+   move info
+   propedit (pedit, pe)
+   resolvee(pset, ps)l)
+   status (stat, st)
+Subversion is a tool
+For additional information,
+svn: E2050sol25 ~]$ svn checkout
+svn: E205001: Not enough argum
+[sabjacks@sol25 ~]$ svn co https://github.com/sjackson96/L
+-bash: cd: repo: No such fil
+[sabjacks@sol25 ~]$ cd https://github.com/sjackson96/Lab6Part
+-bash: cd: https://githu
+-bash: cd: Lab6Part2cd Lab6Part2
+[sabjacks@sol25 ~]$
+-bash: cd: trunk: No such
+svn: warning: W155007: '/users1/st/sabjacks' is not a working cop
+svn: E155007: '/users1/st/sabjacks' is
+[sabjacks@sol25 ~]$ svn co --depth empty git@github.com:sjackson96/La
+[sabjacks@sol25 ~]$ svn co --depth https:o
+svn: E205000: 'https://github.com/sjackson96/Lab6Part2.git' is not a valid depth
+[sabjacks@sol25 ~]$ svn co --depth empty
+Checked out revision 0.
+-bash: cd: https://github.com/sjackson96/Lab6Part2.gi
+[sabjacks@sol25 ~]$
+svn: E205001: Try 'svn hel
+svn: E205001: Tr~]$ svn changelist provided
+[sabjacks@sol25 ~]$ svn herguments provided
+usage: svn <subcommand> [op
+Subversion command-line client, version 1.
+Type 'svn help <subcommand>' for h
+Type 'svn --v
+  or 'svn --version --quie
+Most subcommands take file
+on the directories.  If no arguments are
+command, it recurses on the current directory (
+   blame (praise, annotate, ann)
+   checkoutst (cl)
+   dely (cp)i)
+   exportdi)
+   lock (ls)
+   mkdirinfo
+   propdel (pd
+   pro
+   propget (pget
+   pro
+   propset (pset, ps)
+   relocate
+   resolve
+   resolved
+   revert
+   status (stat, st)
+   switch (sw)
+   unlock
+   update (up)
+   upgrade
+
+Subversion is a tool for version control.
+For additional information, see http://subversion.apache.org/
+[sabjacks@sol25 ~]$ svn cd
+Unknown command: 'cd'
+Type 'svn help' for usage.
+[sabjacks@sol25 ~]$ cd
+[sabjacks@sol25 ~]$ svn clone https://github.com/sjackson96/Lab6Part2.git
+Unknown command: 'clone'
+Type 'svn help' for usage.
+[sabjacks@sol25 ~]$ cd trunk
+-bash: cd: trunk: No such file or directory
+[sabjacks@sol25 ~]$ cd https://github.com/sjackson96/Lab6Part2.git
+-bash: cd: https://github.com/sjackson96/Lab6Part2.git: No such file or directory
+[sabjacks@sol25 ~]$ cd Desktop
+-bash: cd: Desktop: No such file or directory
+[sabjacks@sol25 ~]$ cd LAPTOP-52U8CSPH
+-bash: cd: LAPTOP-52U8CSPH: No such file or directory
+[sabjacks@sol25 ~]$ git clone https://github.com/sjackson96/Lab6Part2.git
+Cloning into 'Lab6Part2'...
+warning: You appear to have cloned an empty repository.
+[sabjacks@sol25 ~]$ cd Lab6Part2
+[sabjacks@sol25 Lab6Part2]$ svn add Repo2
+svn: E155007: '/users1/st/sabjacks/Lab6Part2' is not a working copy
+[sabjacks@sol25 Lab6Part2]$ svn clone https://github.com/sjackson96/Lab6Part2.git
+Unknown command: 'clone'
+Type 'svn help' for usage.
+[sabjacks@sol25 Lab6Part2]$ svn help
+usage: svn <subcommand> [options] [args]
+Subversion command-line client, version 1.7.14.
+Type 'svn help <subcommand>' for help on a specific subcommand.
+Type 'svn --version' to see the program version and RA modules
+  or 'svn --version --quiet' to see just the version number.
+
+Most subcommands take file and/or directory arguments, recursing
+on the directories.  If no arguments are supplied to such a
+command, it recurses on the current directory (inclusive) by default.
+
+Available subcommands:
+   add
+   blame (praise, annotate, ann)
+   cat
+   changelist (cl)
+   checkout (co)
+   cleanup
+   commit (ci)
+   copy (cp)
+   delete (del, remove, rm)
+   diff (di)
+   export
+   help (?, h)
+   import
+   info
+   list (ls)
+   lock
+   log
+   merge
+   mergeinfo
+   mkdir
+   move (mv, rename, ren)
+   patch
+   propdel (pdel, pd)
+   propedit (pedit, pe)
+   propget (pget, pg)
+   proplist (plist, pl)
+   propset (pset, ps)
+   relocate
+   resolve
+   resolved
+   revert
+   status (stat, st)
+   switch (sw)
+   unlock
+   update (up)
+   upgrade
+
+Subversion is a tool for version control.
+For additional information, see http://subversion.apache.org/
+[sabjacks@sol25 Lab6Part2]$ cd Lab6Part2
+-bash: cd: Lab6Part2: No such file or directory
+[sabjacks@sol25 Lab6Part2]$ svn checkout https://github.com/sjackson96/Lab6Part2.git
+Checked out revision 0.
+[sabjacks@sol25 Lab6Part2]$ pwd trunk
+/users1/st/sabjacks/Lab6Part2
+[sabjacks@sol25 Lab6Part2]$ svn info
+svn: E155007: '/users1/st/sabjacks/Lab6Part2' is not a working copy
+[sabjacks@sol25 Lab6Part2]$
